@@ -88,6 +88,49 @@
               <td>login</td>
               <td>If login JSON data matches a user in database, will return JwtSecurityToken</td>
             </tr>
+            <tr class="border border-white">
+              <td>auth</td>
+              <td>Gets all user info. Usernames, passwords, and their ids</td>
+            </tr>
+            <tr class="border border-white">
+              <td>auth/update</td>
+              <td>Allows you to update a previous userData object, as long as you send a matching id</td>
+            </tr>
+            <tr class="border border-white">
+              <td>auth/delete</td>
+              <td>Allows you to delete a previous userData object, as long as you send a matching id</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-12">
+          <h2>Favorites</h2>
+          <table class="border border-white">
+            <tr class="border border-white">
+              <th>Endpoint</th>
+              <th>Description</th>
+            </tr>
+            <tr class="border border-white">
+              <td>/favorite</td>
+              <td>Grabs all the favorites from the database and returns them.</td>
+            </tr>
+            <tr class="border border-white">
+              <td>/favorite?username=<b>[Username]</b></td>
+              <td>Grabs all the favorites from the database that match the username inputed and returns them.</td>
+            </tr>
+            <tr class="border border-white">
+              <td>/favorite/add</td>
+              <td>Lets you post a new favorite from code to the database. takes a JS object</td>
+            </tr>
+            <tr class="border border-white">
+              <td>/favorite/update</td>
+              <td>Lets you update a previous favorite already in the database. Make sure to match id's</td>
+            </tr>
+            <tr class="border border-white">
+              <td>/favorite/delete</td>
+              <td>Lets you delete a favorite in the database. Make sure to match id's</td>
+            </tr>
           </table>
         </div>
       </div>
